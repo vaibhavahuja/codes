@@ -10,7 +10,6 @@ void show(auto a){for(int i=0;i<a.size();i++){cout<<a[i]<<"";}cout<<endl;}
 
 int main(){
   ios_base::sync_with_stdio(false);
-
   int t;
   cin>>t;
   while(t--){
@@ -62,6 +61,5 @@ int main(){
 	    }
 	    show(ans);
   }
-
-
+  //works now: was using just the last set, changed that to a stack and it works now.
 }
