@@ -11,14 +11,6 @@ using namespace std;
 #define mii map<int, int>
 void show(auto a){for(int i=0;i<a.size();i++){cout<<a[i]<<" ";}cout<<endl;}
 
-void show(pq a){
-	pq b = a;
-	while(!b.empty()){
-		pii bb = b.top();
-		b.pop();
-		cout<<bb.first<<" "<<bb.second<<endl;
-	}
-}
 
 int main(){
   ios_base::sync_with_stdio(false);
@@ -37,7 +29,7 @@ int main(){
     int p = 0, q = 0;
     if(k%n == 0) cout<<0<<endl;
     else cout<<2<<endl;
-    
+
     while(k--){
       arr[p][q] = 1;
       p = p+1, q = (q+1)%n;
