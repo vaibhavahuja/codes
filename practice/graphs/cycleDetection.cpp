@@ -20,6 +20,7 @@ void dfs(int v, int parent){
 			dfs(u, v);
 		}else{
 			if(u != parent){
+        // cout<<u<<" "<<parent<<endl;
 				isCycle = true;
 			}
 		}
