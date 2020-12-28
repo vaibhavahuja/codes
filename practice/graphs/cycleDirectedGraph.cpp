@@ -29,7 +29,7 @@ bool dfs(int v){
 	}
 
 	color[v] = 2;	//no more paths to explore
-	return false;
+	return false;	//no cycle found
 }
 
 void find_cycle(){
